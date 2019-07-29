@@ -11,9 +11,11 @@ If you find our work useful, please also cite the paper:
 ```
 @inproceedings{ruff2019,
   title     = {Self-Attentive, Multi-Context One-Class Classification for Unsupervised Anomaly Detection on Text},
-  author    = {Ruff, Lukas and Zemlyanskiy, Yury and Vandermeulen, Robert A. and Schnake, Thomas and Kloft, Marius},
-  booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  author    = {Ruff, Lukas and Zemlyanskiy, Yury and Vandermeulen, Robert and Schnake, Thomas and Kloft, Marius},
+  booktitle = {Proceedings of the 57th Conference of the Association for Computational Linguistics},
+  month     = {jul},
   year      = {2019},
+  pages     = {4061--4071}
 }
 ```
 
