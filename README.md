@@ -66,7 +66,7 @@ The following are examples on how to run experiments on
 [`IMDB Movie Reviews`](http://ai.stanford.edu/~amaas/data/sentiment/) as reported in the paper.
 
 ### Reuters-21578
-Here's an example on `reuters` with ship (`--normal_class 6`) considered to be the normal class using `GloVe_6B` word
+Here's an example on `reuters` with `'ship'` (`--normal_class 6`) considered to be the normal class using `GloVe_6B` word
 embeddings for a CVDD model with `--n_attention_heads 3` and `--attention_size 150`.
 ```
 cd <path-to-CVDD-PyTorch-directory>
@@ -87,7 +87,7 @@ The indexation of classes is `[0, 1, 2, 3, 4, 5, 6]` for
 `['earn', 'acq', 'crude', 'trade', 'money-fx', 'interest', 'ship']`.
 
 ### 20 Newsgroups
-Here's an example on `newsgroups20` with computer (`--normal_class 0`) considered to be the normal class using 
+Here's an example on `newsgroups20` with `'comp'` (`--normal_class 0`) considered to be the normal class using 
 `FastText_en` word embeddings for a CVDD model with `--n_attention_heads 3` and `--attention_size 150`.
 ```
 cd <path-to-CVDD-PyTorch-directory>
