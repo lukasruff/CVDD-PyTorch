@@ -104,7 +104,7 @@ cd src
 # run experiment
 python main.py newsgroups20 cvdd_Net ../log/test_newsgroups20 ../data --device cpu --seed 1 --clean_txt --embedding_size 300 --pretrained_model FastText_en --ad_score context_dist_mean --n_attention_heads 3 --attention_size 150 --lambda_p 1.0 --alpha_scheduler logarithmic --n_epochs 100 --lr 0.01 --lr_milestone 40 --normal_class 0;
 ```
-The indexation of classes is `[0, 1, 2, 3, 4, 5]` for `['comp', 'rec', 'sci', 'misc', 'talk', 'pol', 'rel']`.
+The indexation of classes is `[0, 1, 2, 3, 4, 5]` for `['comp', 'rec', 'sci', 'misc', 'pol', 'rel']`.
 
 ### IMDB Movie Reviews
 Here's an example on training a CVDD model with `--n_attention_heads 10` and `--attention_size 150` on the full `imdb`
