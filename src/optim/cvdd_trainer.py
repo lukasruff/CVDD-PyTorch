@@ -58,7 +58,8 @@ class CVDDTrainer(BaseTrainer):
         train_loader, _ = dataset.loaders(batch_size=self.batch_size, num_workers=self.n_jobs_dataloader)
 
         # Initialize context vectors
-        net.c.data = torch.from_numpy(initialize_context_vectors(net, train_loader, self.device)[np.newaxis, :])
+        net.c.data = torch.from_numpy(
+            initialize_context_vectors(net, train_loader, self.device)[np.newaxis, :]).to(self.device)
 
         # Set parameters and optimizer (Adam optimizer for now)
         parameters = filter(lambda p: p.requires_grad, net.parameters())
